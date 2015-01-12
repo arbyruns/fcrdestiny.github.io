@@ -4122,7 +4122,10 @@ border-top-color:#d4dee3
 color:#217dbb
 }
 .alert-warning{
-background-color:#faf9f7;border-color:#f0ece7;color:#e67e22
+background-color:#faf9f7;
+border-color:#f0ece7;
+color:#e67e22
+font-family:Roboto Condensed;
 }
 .alert-warning hr{
 border-top-color:#e6dfd8
