@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+	<title>Filthy Casual Report</title>
+	<!-- meta data -->
 	<meta charset="UTF-8">
+	<meta name="description" content="Destiny Filthy Casual Report">
+	<meta name="keywords" content="Destiny,Bungie,Reddit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Destiny Filthy casual report">
-	<meta name="keywords" content="Destiny,Filthy Casual Report,FCR,Destiny the game, casual">
-	<meta name="author" content="destinyfcr">
-	<title>Filthy Casual Report | For all the filthy casuals</title>
-	<link rel="stylesheet" id="wsl-widget-css" href="style.css" type="text/css" media="all">
-	<link rel="stylesheet" id="flat-main-css" href="main.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="flat-style-css" href="style(1).css" type="text/css" media="all">
-	<link rel="stylesheet" id="jetpack_css-css" href="jetpack.css" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!-- fonts - recommend not using these as it dramatically increases time to load-->
+	<!-- icons -->
+	<link rel="icon" type="image/png" href="i/favicon.png">
 	<!--Added Bootstrop Icon -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab' rel='stylesheet' type='text/css'>
-	<link rel="icon" type="image/png" href="i/favicon.png">
+	<!-- script libraries -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+	<!-- inline styles - there should not be much here. All styles should be in css files -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,160 +32,140 @@
 	  ga('create', 'UA-58278617-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-<!--[if lt IE 9]>
-<script src="http://www.iderpy.com/casual/wp-content/themes/flat/assets/js/html5shiv.min.js"></script>
-<script src="http://www.iderpy.com/casual/wp-content/themes/flat/assets/js/respond.min.js"></script>
-<![endif]-->
-	<style type="text/css"></style>
-	<style type="text/css">#masthead .site-title {font-family:Amatic SC}body {font-family:Roboto }h1,h2,h3,h4,h5,h6 {font-family:Roboto Slab}#masthead .site-description, .hentry .entry-meta {font-family:Roboto Condensed}</style><link href="index.html" rel="stylesheet" type="text/css"><style type="text/css" id="custom-background-css">
-body.custom-background { background-image: url('i/bgdest.jpg'); background-repeat: no-repeat; background-position: top left; background-attachment: fixed; }
-</style>
+	<style type="text/css">
+	</style>
 </head>
-
-<body class="home blog custom-background">
-<div id="page">
-	<div class="container">
-		<div class="row row-offcanvas row-offcanvas-left">
-			<div id="secondary" class="col-lg-3">
-				<header id="masthead" class="site-header" role="banner">
-					<div class="hgroup">
-						<h1 class="site-title display-title"><a href="index.html" title="Filthy Casual Report" rel="home"><img src="i/banner.png" width="100%"/></a></h1>
-						<h2 class="site-description">For all the filthy casuals</h2>					
+<body>
+	<!-- This container fills the whole page -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- This sets a blank area to the left of content area -->
+			<div class="col-md-2 .hidden-xs .hidden-sm">
+			</div>
+			<!-- content area -->
+			<div class="col-md-8 col-xs-12" id="content-area">
+				<!-- Header of content area -->
+				<div class="row" id="content-head">
+					<div class="col-md-1 .hidden-xs .hidden-sm">
 					</div>
-					<button type="button" class="btn btn-link hidden-lg toggle-sidebar" data-toggle="offcanvas" aria-label="Sidebar"><i class="fa fa-bars"></i></button>
-						<!--
-					<button type="button" class="btn btn-link hidden-lg toggle-navigation" aria-label="Navigation Menu"><i class="fa fa-bars"></i></button>
-					right side button-->
-					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-						<div class="nav-menu"></div>
-					</nav>
-				</header>
-				<div class="sidebar-offcanvas">
-					<div id="main-sidebar" class="widget-area" role="complementary">
-						<aside id="recent-posts-2" class="widget widget_recent_entries">		
-							<h3 class="widget-title">Resources:</h3>		
+					<div class="col-md-10">
+						<a href="index.html" title="Filthy Casual Report" rel="home"><img src="i/banner.png" href="index.html" width="40%" id="site-banner" /></a>
+						<div id="content-navbar" >
+							<!-- Collapse menu -->
+							<button class = "navbar-toggle" data-toggle ="collapse" data-target = ".navHeaderCollapse"><i class="fa fa-bars fa-lg fa-inverse"></i>
+							</button>
+							<!-- To be collapse-->
+							<div  class = "collapse navbar-collapse navHeaderCollapse">						
+								<a href='index.html'>Reports</a>
+								<a href='getting_started.html'>Getting Started</a>
+								<a href = '#' class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+									<ul class="dropdown-menu dropdown-menu-right" role="menu">
+										<li><a href="http://www.reddit.com/r/destinythegame">/r/destinythegame</a></li>
+										<li class="divider"></li>
+										<li><a href="http://www.destinylfg.net">DestinyLFG.net</a></li>
+										<li class="divider"></li>
+										<li><a href="http://www.destinypublicevents.com/">Public Events</a></li>
+										<li class="divider"></li>
+										<li><a href="http://destinydb.com/">Destiny DB</a></li>
+										<li class="divider"></li>
+										<li><a href="http://destinytracker.com/">Destiny Tracker</a></li>
+										<li class="divider"></li>
+										<li><a href="http://firetea.ms/">Firetea.ms</a></li>
+										<li class="divider"></li>
+										<li><a href="http://www.the100.io/">The 100</a></li>
+										<li class="divider"></li>
+										<li><a href="http://destinystatus.com/">Destiny Status</a></li>
+										<li class="divider"></li>
+										<li><a href="http://destinyghosthunter.net/index.php">Destiny Ghost Hunter</a></li>
+										<li class="divider"></li>
+										<li><a href="http://destinyexotics.com/">Destiny Exotics</a></li>
+										<li class="divider"></li>
+										<li><a href="http://whereisxur.com/">Where Is Xur</a></li>	
+										<li class="divider"></li>
+										<li><a href="http://destiny-portal.com">Destiny-portal</a></li>
+										<li class="divider"></li>
+										<li><a href="http://destiny-daily.com">Destiny-Daily.com</a></li>											
+									</ul>		
+								<a href='about.html'>About</a>
+							</div>
+						</div>
+					<div class="col-md-1 .hidden-xs .hidden-sm">
+					</div>
+					</div>
+				</div>
+				<!-- Header separator -->
+				<div class="row">
+					<div class="col-md-1 .hidden-xs .hidden-sm">
+					</div>
+					<div class="col-md-10 cold-xs-12">
+						<div class="content-separator">
+						</div>
+					</div>
+					<div class="col-md-1 .hidden-xs .hidden-sm">
+					</div>
+				</div>
+				<!-- Body of content area -->
+				<div class="row" id="content-body">
+					<div class="col-md-1 .hidden-xs .hidden-sm">
+					</div>
+					<div class="col-md-10 col-xs-12">
+						<h1>REPORTS</h1>							
+						<div class="post-wrapper">
+							<div class="post-content">
+								<nav>
+								  <ul class="pager">
+									<h3 class="previous"><a href="fc1.html">Older</a></h3>
+									<h3 class="next"><a href="fc3.html">Newer</a></h3>
+								  </ul>
+								  <hr>
+								</nav>								
+								<p class="article-date">12/20 - 12/26 2014</p>
+								<h2>Filthy Casual Report</h2>
+								<h4><a href ="https://www.reddit.com/r/DestinyTheGame/comments/2r3lgl/weekly_filthy_casual_report_1227_12/">View this post and its comments on reddit</a></h4>
+								<!--Insert MD class from Reddit post-->
+								<div class="md">
+								<br>
+								<p>Welcome back to the <strong>Weekly Filthy Casual Report</strong>.  I wanted to start the weekly thread with the focus of not just casual players, but all around all players.</p>
+								<p>It really amazes me some of the information folks find regarding the world of Destiny and at times there is to much for players to keep up with.  Please forgive me if you felt I missed a post that should have been added.  This is a work in progress and searching through the pass weeks post so I'm sure I'm bound to miss something. Just blame RNG.</p>
+
+								<p>I have also been working on the <a href="https://www.reddit.com/r/DestinyTheGame/wiki/casualreport" class="imgScanned">sites wiki</a><span title="press 1 to open link" class="keyNavAnnotation">[1] </span> to store past post, web-sites redditors have created, and more information to come.  </p>
+
+								<p>Here is what I found to be some of the most useful post for players in the past week in no particular order</p>
+								<hr>
 								<ul>
-									<li><a href="http://www.reddit.com/r/destinythegame">/r/destinythegame</a></li>
-									<li><a href="http://www.DestinyLFG.net.net">DestinyLFG.net</a></li>
-									<li><a href="http://www.destinypublicevents.com/">Public Events</a></li>
-									<li><a href="http://destinydb.com/">Destiny DB</a></li>
-									<li><a href="http://destinytracker.com/">Destiny Tracker</a></li>
-									<li><a href="http://firetea.ms/">Firetea.ms</a></li>
-									<li><a href="http://www.the100.io/">The 100</a></li>
-									<li><a href="http://destinystatus.com/">Destiny Status</a></li>
-									<li><a href="http://destinyghosthunter.net/index.php">Destiny Ghost Hunter</a></li>
-									<li><a href="http://destinyexotics.com/">Destiny Exotics</a></li>
-									<li><a href="http://destiny-portal.com">Destiny-portal</a></li>
-									<li><a href="http://destiny-daily.com">Destiny-Daily.com</a></li>
-									<li><a href="http://whereisxur.com/">Where Is Xur</a></li>									
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qsu71/nightfall_this_week_is_omnigul/" class="imgScanned">Nightfall this week is Omnigul</a><span title="press 2 to open link" class="keyNavAnnotation">[2] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qn6ok/sga_you_can_trade_in_already_upgraded_exotic/" class="imgScanned">[SGA] You can trade in already upgraded Exotic Armor for a better roll</a><span title="press 3 to open link" class="keyNavAnnotation">[3] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qldji/crotas_end_solo_with_the_no_land_beyond/" class="imgScanned">Crota's End Solo with the No Land Beyond</a><span title="press 4 to open link" class="keyNavAnnotation">[4] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r0who/sony_extends_all_playstation_plus_memberships_by/" class="imgScanned">Sony extends all Playstation Plus memberships by 5 days due to outages</a><span title="press 5 to open link" class="keyNavAnnotation">[5] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qfogc/why_to_buy_no_land_beyond/" class="imgScanned">Why to buy No Land Beyond</a><span title="press 6 to open link" class="keyNavAnnotation">[6] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qjdu9/exclusion_zone_glimmer_farming_maximum_efficiency/" class="imgScanned">Exclusion Zone Glimmer Farming - Maximum Efficiency (with tips and description)</a><span title="press 7 to open link" class="keyNavAnnotation">[7] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qpxpw/mida_multitool_love/" class="imgScanned">Mida Multitool Love</a><span title="press 8 to open link" class="keyNavAnnotation">[8] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2quyg6/how_to_very_easily_lure_out_the_wizards_during/" class="imgScanned"> How to very easily lure out the wizards during the Ir Yut phase of Crota's End</a><span title="press 9 to open link" class="keyNavAnnotation">[9] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qukzr/sga_aim_down_sights_for_more_damage_on_oversoul/" class="imgScanned">SGA: Aim Down Sights for more Damage on Oversoul</a><span title="press 0 to open link" class="keyNavAnnotation">[10] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qu32o/sga_lfg_means_looking_for_group_lfm_means_looking/" class="imgScanned">[SGA] LFG means "looking for group." LFM means "looking for more."</a><span title="press . then 11 and Enter to open link" class="keyNavAnnotation">[11] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r0cjy/sga_daily_heroic_xp_bonus_doesnt_apply_to_weapons/" class="imgScanned">[SGA] Daily Heroic XP Bonus Doesn't Apply to Weapons</a><span title="press . then 12 and Enter to open link" class="keyNavAnnotation">[12] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r07ut/sga_for_the_axion_bolt_eris_bounty_equip_bloom/" class="imgScanned">[SGA] For the Axion Bolt Eris Bounty. Equip Bloom</a><span title="press . then 13 and Enter to open link" class="keyNavAnnotation">[13] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r0e6d/sga_dont_upgrade_your_black_hammer/" class="imgScanned">[SGA] DONT upgrade your black hammer</a><span title="press . then 14 and Enter to open link" class="keyNavAnnotation">[14] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r018t/sga_flash_suppressor_grenades_work_on_omnigul/" class="imgScanned">[SGA] Flash &amp; Suppressor grenades work on Omnigul.</a><span title="press . then 15 and Enter to open link" class="keyNavAnnotation">[15] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r2ufj/killing_crota_legit_with_a_single_sword_in_under/" class="imgScanned">Killing crota LEGIT with a single sword in under 90 seconds!!!</a><span title="press . then 16 and Enter to open link" class="keyNavAnnotation">[16] </span></p></li>
+								<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r352t/xur_megathread_1215_1415/" class="imgScanned">Xur Megathread 1/2/15 - 1/4/15</a><span title="press . then 17 and Enter to open link" class="keyNavAnnotation">[17] </span></p></li>
+								<li><p><a href="http://www.reddit.com/r/DestinyTheGame/comments/2qpsjj/master_gunslinger_guide_500_hour_hunter/" class="imgScanned">Master Gunslinger Guide - 500+ hour Hunter </a><span title="press . then 18 and Enter to open link" class="keyNavAnnotation">[18] </span></p></li>
 								</ul>
-						</aside>
-						<aside id="recent" class="widget widget_recent_entries">
-						<h3 class="widget-title">About</h3>
-							<ul>
-							<li>
-								<a href="about.html">About</a>
-							</li>
-							</ul>
-						</aside>
-					</div>			
+
+								</div>	
+								<!--End of MD class from Reddit post-->
+							</div>						
+						</div>
+					</div>
+					<div class="col-md-1 .hidden-xs .hidden-sm">
+					</div>
 				</div>
 			</div>
-		<div id="primary" class="content-area col-lg-9">
-			<div id="content" class="site-content" role="main">
-					<article id="post-20" class="post-20 post type-post status-publish format-standard hentry category-uncategorized">
-						<header class="entry-header">
-							<h2 class="entry-title">
-								Weekly Filthy Casual Report (12/27 – 1/2)
-							</h2>
-							<nav>
-								<ul class="pager">
-									<li><a href="FC2.html">Previous</a></li>
-									<li><a href="FC4.html">Next</a></li>
-								</ul>
-							</nav>								
-							<a href="https://www.reddit.com/r/DestinyTheGame/comments/2r3lgl/weekly_filthy_casual_report_1227_12/" title="Weekly Filthy Casual Report (12/13 – 12/19)" rel="bookmark">View this post and its comments on Reddit</a>
-						</header>
-					<div class="entry-content"> 
-					<!--Insert MD class from Reddit post-->
-						
-						<div class="md"><p>Welcome back to the <strong>Weekly Filthy Casual Report</strong>.  I wanted to start the weekly thread with the focus of not just casual players, but all around all players.  </p>
-
-<p>It really amazes me some of the information folks find regarding the world of Destiny and at times there is to much for players to keep up with.  Please forgive me if you felt I missed a post that should have been added.  This is a work in progress and searching through the pass weeks post so I'm sure I'm bound to miss something. Just blame RNG.</p>
-
-<p>I have also been working on the <a href="https://www.reddit.com/r/DestinyTheGame/wiki/casualreport" class="imgScanned">sites wiki</a><span title="press 1 to open link" class="keyNavAnnotation">[1] </span> to store past post, web-sites redditors have created, and more informaiton to come.  </p>
-
-<p>Here is what I found to be some of the most useful post for players in the past week in no particular order</p>
-
-<hr>
-
-<ul>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qsu71/nightfall_this_week_is_omnigul/" class="imgScanned">Nightfall this week is Omnigul</a><span title="press 2 to open link" class="keyNavAnnotation">[2] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qn6ok/sga_you_can_trade_in_already_upgraded_exotic/" class="imgScanned">[SGA] You can trade in already upgraded Exotic Armor for a better roll</a><span title="press 3 to open link" class="keyNavAnnotation">[3] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qldji/crotas_end_solo_with_the_no_land_beyond/" class="imgScanned">Crota's End Solo with the No Land Beyond</a><span title="press 4 to open link" class="keyNavAnnotation">[4] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r0who/sony_extends_all_playstation_plus_memberships_by/" class="imgScanned">Sony extends all Playstation Plus memberships by 5 days due to outages</a><span title="press 5 to open link" class="keyNavAnnotation">[5] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qfogc/why_to_buy_no_land_beyond/" class="imgScanned">Why to buy No Land Beyond</a><span title="press 6 to open link" class="keyNavAnnotation">[6] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qjdu9/exclusion_zone_glimmer_farming_maximum_efficiency/" class="imgScanned">Exclusion Zone Glimmer Farming - Maximum Efficiency (with tips and description)</a><span title="press 7 to open link" class="keyNavAnnotation">[7] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qpxpw/mida_multitool_love/" class="imgScanned">Mida Multitool Love</a><span title="press 8 to open link" class="keyNavAnnotation">[8] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2quyg6/how_to_very_easily_lure_out_the_wizards_during/" class="imgScanned"> How to very easily lure out the wizards during the Ir Yut phase of Crota's End</a><span title="press 9 to open link" class="keyNavAnnotation">[9] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qukzr/sga_aim_down_sights_for_more_damage_on_oversoul/" class="imgScanned">SGA: Aim Down Sights for more Damage on Oversoul</a><span title="press 0 to open link" class="keyNavAnnotation">[10] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qu32o/sga_lfg_means_looking_for_group_lfm_means_looking/" class="imgScanned">[SGA] LFG means "looking for group." LFM means "looking for more."</a><span title="press . then 11 and Enter to open link" class="keyNavAnnotation">[11] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r0cjy/sga_daily_heroic_xp_bonus_doesnt_apply_to_weapons/" class="imgScanned">[SGA] Daily Heroic XP Bonus Doesn't Apply to Weapons</a><span title="press . then 12 and Enter to open link" class="keyNavAnnotation">[12] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r07ut/sga_for_the_axion_bolt_eris_bounty_equip_bloom/" class="imgScanned">[SGA] For the Axion Bolt Eris Bounty. Equip Bloom</a><span title="press . then 13 and Enter to open link" class="keyNavAnnotation">[13] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r0e6d/sga_dont_upgrade_your_black_hammer/" class="imgScanned">[SGA] DONT upgrade your black hammer</a><span title="press . then 14 and Enter to open link" class="keyNavAnnotation">[14] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r018t/sga_flash_suppressor_grenades_work_on_omnigul/" class="imgScanned">[SGA] Flash &amp; Suppressor grenades work on Omnigul.</a><span title="press . then 15 and Enter to open link" class="keyNavAnnotation">[15] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r2ufj/killing_crota_legit_with_a_single_sword_in_under/" class="imgScanned">Killing crota LEGIT with a single sword in under 90 seconds!!!</a><span title="press . then 16 and Enter to open link" class="keyNavAnnotation">[16] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2r352t/xur_megathread_1215_1415/" class="imgScanned">Xur Megathread 1/2/15 - 1/4/15</a><span title="press . then 17 and Enter to open link" class="keyNavAnnotation">[17] </span></p></li>
-<li><p><a href="http://www.reddit.com/r/DestinyTheGame/comments/2qpsjj/master_gunslinger_guide_500_hour_hunter/" class="imgScanned">Master Gunslinger Guide - 500+ hour Hunter </a><span title="press . then 18 and Enter to open link" class="keyNavAnnotation">[18] </span></p></li>
-</ul>
-
-<hr>
-
-<p><strong>WebSites</strong><br>
-<a href="http://isxuratthetower.com/" class="imgScanned">http://isxuratthetower.com/</a><span title="press . then 19 and Enter to open link" class="keyNavAnnotation">[19] </span>  </p>
-
-<p><a href="http://destinypublicevents.com" class="imgScanned">http://destinypublicevents.com</a><span title="press . then 20 and Enter to open link" class="keyNavAnnotation">[20] </span> </p>
-
-<p><a href="http://destinylfg.net" class="imgScanned">http://destinylfg.net</a><span title="press . then 21 and Enter to open link" class="keyNavAnnotation">[21] </span></p>
-
-<p><a href="http://destinyplanner.apphb.com/" class="imgScanned">http://destinyplanner.apphb.com/</a><span title="press . then 22 and Enter to open link" class="keyNavAnnotation">[22] </span>  </p>
-
-<p><a href="http://destinystatus.com/" class="imgScanned">http://destinystatus.com/</a><span title="press . then 23 and Enter to open link" class="keyNavAnnotation">[23] </span>  </p>
-
-<p><a href="http://destinytracker.com" class="imgScanned">http://destinytracker.com</a><span title="press . then 24 and Enter to open link" class="keyNavAnnotation">[24] </span></p>
-
-<p><a href="http://destinyghosthunter.net/" class="imgScanned">http://destinyghosthunter.net/</a><span title="press . then 25 and Enter to open link" class="keyNavAnnotation">[25] </span>  </p>
-
-<p><a href="http://destinylfg.com" class="imgScanned">http://destinylfg.com</a><span title="press . then 26 and Enter to open link" class="keyNavAnnotation">[26] </span></p>
-
-<p><a href="http://destinyrep.com" class="imgScanned">http://destinyrep.com</a><span title="press . then 27 and Enter to open link" class="keyNavAnnotation">[27] </span></p>
-
-<p><a href="http://destinydb.com/" class="imgScanned">http://destinydb.com/</a><span title="press . then 28 and Enter to open link" class="keyNavAnnotation">[28] </span></p>
-
-<p><a href="http://isthegunsmithsellingrarefusionrifles.com/" class="imgScanned">http://isthegunsmithsellingrarefusionrifles.com/</a><span title="press . then 29 and Enter to open link" class="keyNavAnnotation">[29] </span></p>
-
-<hr>
-
-<p><strong>Previous Reports</strong></p>
-
-<ul>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2qeixe/weekly_filthy_casual_report_1220_1226/" class="imgScanned">Weekly Filthy Casual Report (12/20 - 12/26)</a><span title="press . then 30 and Enter to open link" class="keyNavAnnotation">[30] </span></p></li>
-<li><p><a href="https://www.reddit.com/r/DestinyTheGame/comments/2psb3t/weekly_filthy_casual_report_1213_1219/" class="imgScanned">Weekly Filthy Casual Report (12/13 - 12/19)</a><span title="press . then 31 and Enter to open link" class="keyNavAnnotation">[31] </span></p></li>
-</ul>
-
-<hr>
-
-<p>I may have missed some good post so please forgive me. If you feel I may have missed something please include in the comments.</p>
-</div>
-
-<!--End of MD class from Reddit post-->
-					</div>
-				</article>			
+			<!-- This sets a blank area to the right of content area -->
+			<div class="col-md-2 .hidden-xs .hidden-sm">
 			</div>
 		</div>
 	</div>
-	</div>
-</div>
-<script type="text/javascript" src="js/scripts.min.js"></script>
+	<script type="text/javascript" src="js/scripts.min.js"></script>
 </body>
 </html>
